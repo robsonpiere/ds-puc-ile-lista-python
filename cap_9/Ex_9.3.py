@@ -1,6 +1,5 @@
 emails = dict()
 arquivo = input("Digite o nome do arquivo: ")
-
 try:
     fhand = open(arquivo)
     for line in fhand:
@@ -12,15 +11,7 @@ try:
             emails[email] += 1
         else:
             emails[email] = 1
-        m_email = ""
-        total = 0
-        for email in emails:
-            if emails[email] > total:
-                m_email = email
-                total = emails[email]
-    print("Email com mair número de envios:",end=" ")
-    print(m_email,end=" : ")
-    print(total)
+    print(emails)
 except:
     print("Não foi possível abrir o arquivo")
 finally:
