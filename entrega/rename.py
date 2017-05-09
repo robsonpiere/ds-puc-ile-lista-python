@@ -6,5 +6,4 @@ for nome in os.listdir('./file'):
     subnumero = dados[1]
     novo_nome = numero + "_" + subnumero + ".py"
     os.rename("./file/"+nome, "./file/"+novo_nome)
-    print(nome)
-    print(novo_nome)
+    print("arquivo " + nome + " alterado para " + novo_nome)
